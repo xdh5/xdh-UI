@@ -1,20 +1,17 @@
 <template>
-<svg class="icon">
+<svg class="x-icon">
   <use :xlink:href="`#i-${name}`"></use>
 </svg>
 </template>
 <script>
+import '@/assets/icon.js'
 export default{
-  name: 'icon',
+  name: 'x-icon',
   props:{
     'name':{},
   }
 }
 </script>
 <style lang="less" scoped>
-.icon{
-  height: 1em;
-  width: 1em;
-  margin-right:.3em
-}
+.x-icon{ height: 1em; width: 1em; margin-right:.3em }
 </style>
