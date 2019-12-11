@@ -2,10 +2,10 @@
 <div class="x-toast" :class="toastClasses">
   <div class="toast" ref="toast">
     <div class="message">
-      <slot v-if="!enableHtml"></slot>
-      <div v-else v-html="$slots.default[0]"></div>
+      <slot v-if="!enableHtml">{{msg}}</slot>
+      <div v-else v-html="msg"></div>
     </div>
-    <span class="close" v-if="closeButton" @click="onClickClose">
+    <span class="close" v-if="closeButton" @click="close">
       {{closeButton.text}}
     </span>
   </div>
@@ -15,6 +15,9 @@
 export default {
   name: 'x-toast',
   props: {
+    msg: {
+      type: String
+    },
     autoClose: {
       type: [Boolean, Number],
       default: 3,
@@ -45,7 +48,6 @@ export default {
   },
   mounted () {
     this.execAutoClose()
-    this.changeTop()
   },
   computed: {
     toastClasses () {
@@ -62,17 +64,9 @@ export default {
         }, this.autoClose * 1000)
       }
     },
-    changeTop () {
-      let toast = document.querySelectorAll('.x-toast')
-      console.log(toast)
-    },
     close () {
       this.$el.remove()
-      // this.$emit('close')
       this.$destroy()
-    },
-    onClickClose () {
-      this.close()
       if (this.closeButton && typeof this.closeButton.callback === 'function') {
         this.closeButton.callback(this)
       }

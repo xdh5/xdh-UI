@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import mlgb from '@/views/Toast'
+import mlgb from '@/views/Tab'
 export default {
   components: {
     mlgb

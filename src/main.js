@@ -13,6 +13,10 @@ import Header from '@/components/layout/header'
 import Sider from '@/components/layout/sider'
 import Content from '@/components/layout/content'
 import Footer from '@/components/layout/footer'
+import Tab from '@/components/tab/tab'
+import TabPane from '@/components/tab/tab-pane'
+import TabItem from '@/components/tab/tab-item'
+
 import Plugin from '@/plugin'
 
 Vue.component('x-btn', Button)
@@ -26,6 +30,9 @@ Vue.component('x-header', Header)
 Vue.component('x-sider', Sider)
 Vue.component('x-content', Content)
 Vue.component('x-footer', Footer)
+Vue.component('x-tab', Tab)
+Vue.component('x-tab-pane', TabPane)
+Vue.component('x-tab-item', TabItem)
 Vue.use(Plugin)
 
 Vue.config.productionTip = false

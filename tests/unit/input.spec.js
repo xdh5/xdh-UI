@@ -4,7 +4,7 @@ import chai, { expect } from 'chai'
 import sinon from 'sinon'
 import sinonChai from 'sinon-chai'
 import { shallowMount, mount } from '@vue/test-utils'
-import Input from '@/components/x-input'
+import Input from '@/components/input'
 chai.use(sinonChai)
 
 describe('Input', () => {

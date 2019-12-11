@@ -3,19 +3,12 @@ import chai, { expect } from 'chai'
 import sinon from 'sinon'
 import sinonChai from 'sinon-chai'
 import { shallowMount, mount } from '@vue/test-utils'
-import Col from '@/components/grid/col'
-import Row from '@/components/grid/row'
+import Toast from '@/components/toast'
 
 chai.use(sinonChai)
 
-describe('Col.vue', () => {
+describe('Toast.vue', () => {
   it('存在.', () => {
-    expect(Col).to.exist
-  })
-})
-
-describe('Row.vue', () => {
-  it('存在.', () => {
-    expect(Row).to.exist
+    expect(Toast).to.exist
   })
 })
