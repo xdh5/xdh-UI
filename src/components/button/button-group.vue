@@ -9,7 +9,7 @@ export default {
   mounted () {
     for (let node of this.$el.children) {
       if (node.nodeName.toLowerCase() !== 'button') {
-        console.warn('x-btn-group的子元素应为x-btn')
+        console.warn('x-button-group的子元素应为x-button')
       }
     }
   }

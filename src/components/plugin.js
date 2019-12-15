@@ -1,5 +1,5 @@
 /* eslint-disable*/
-import Toast from '@/components/toast'
+import Toast from './toast'
 
 let currentToast
 

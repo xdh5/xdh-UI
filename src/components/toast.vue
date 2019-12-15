@@ -14,6 +14,11 @@
 <script>
 export default {
   name: 'x-toast',
+  data () {
+    return {
+      timer: null
+    }
+  },
   props: {
     msg: {
       type: String
@@ -57,16 +62,19 @@ export default {
     }
   },
   methods: {
+    // 自动关闭定时器
     execAutoClose () {
       if (this.autoClose) {
-        setTimeout(() => {
+        this.timer = setTimeout(() => {
           this.close()
         }, this.autoClose * 1000)
       }
     },
+    // 关闭并清除可能存在的定时器
     close () {
       this.$el.remove()
       this.$destroy()
+      clearTimeout(this.timer)
       if (this.closeButton && typeof this.closeButton.callback === 'function') {
         this.closeButton.callback(this)
       }
@@ -85,7 +93,7 @@ export default {
   0% { opacity: 0; } 100% { opacity: 1; }
 }
 .x-toast {
-  position: fixed; left: 50%; transform: translateX(-50%); @animation-duration: 300ms;
+  position: fixed; left: 50%; transform: translateX(-50%); @animation-duration: 300ms; z-index: 999;
   &.position-top {
     top: 20px;
     .toast { border-top-left-radius: 0; border-top-right-radius: 0; animation: slide-down @animation-duration; }

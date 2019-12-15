@@ -1,5 +1,6 @@
 module.exports = {
-  presets: [
-    '@vue/cli-plugin-babel/preset'
-  ]
+  'presets': [
+    ['@babel/env', { 'modules': 'commonjs' }]
+  ],
+  'plugins': ['add-module-exports']
 }

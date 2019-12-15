@@ -26,7 +26,7 @@ export default {
     }
   },
   mounted () {
-    this.eventBus.$on('selected', active => {
+    this.eventBus.$on('selected:update', active => {
       this.active = active
     })
   }

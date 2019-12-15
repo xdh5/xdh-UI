@@ -10,10 +10,13 @@
 <script>
 export default {
   name: 'x-tab-item',
+  data () {
+    return {
+      active: ''
+    }
+  },
+  inject: ['eventBus'],
   props: {
-    active: {
-      type: String
-    },
     lable: {
       type: String
     },
@@ -40,36 +43,25 @@ export default {
       if (this.disabled) {
         return
       }
-      this.$emit('selected', this.name)
+      this.eventBus.$emit('selected:update', this.name)
     }
+  },
+  mounted () {
+    this.eventBus.$on('selected:update', active => {
+      this.active = active
+    })
   }
 }
 </script>
 <style lang="less" scoped>
 @blue:#409eff;
 .x-tab-item{
-  padding: 0 20px;
-  margin-right: 10px;
-  cursor: pointer;
-  position: relative;
-  &:hover{
-    color: @blue
-  }
+  padding: 0 20px; margin-right: 10px; cursor: pointer; position: relative;
+  &:hover{ color: @blue }
   &.active {
-    color: @blue;
-    font-weight: bold;
-    .line{
-      height: 2px;
-      width: 100%;
-      background-color: @blue;
-      left: 0;
-      top: 30px;
-      position: absolute;
-    }
+    color: @blue; font-weight: bold;
+    .line{ height: 2px; width: 100%; background-color: @blue; left: 0; top: 30px; position: absolute; }
   }
-  &.disabled {
-    color: gray;
-    cursor: not-allowed;
-  }
+  &.disabled { color: gray; cursor: not-allowed; }
 }
 </style>
