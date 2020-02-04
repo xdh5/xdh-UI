@@ -26,13 +26,12 @@ module.exports = {
           '/guide/components/toast',
           '/guide/components/popover',
           '/guide/components/collapse',
+          '/guide/components/cascader',
+          '/guide/components/carousel',
+          '/guide/components/nav',
+          '/guide/components/pagination'
         ]
       }
     ]
-  },
-  configureWebpack: {
-    output: {
-      publicPath: './'
-    }
   }
 }

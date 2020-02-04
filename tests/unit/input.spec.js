@@ -54,6 +54,7 @@ describe('Input', () => {
     //       error: '你错了'
     //     }
     //   }).$mount()
+    //   console.log(vm)
     //   const useElement = vm.$el.querySelector('use')
     //   expect(useElement.getAttribute('xlink:href')).to.equal('#i-error')
     //   const errorMessage = vm.$el.querySelector('error-message');
