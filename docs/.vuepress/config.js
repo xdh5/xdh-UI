@@ -1,26 +1,18 @@
-const path = require('path')
 module.exports = {
-  base: '/',
+  base: '/xdh-UI/',
   title: 'xdhUI 中文文档 | xdhUI 中文网',
   description: '蛋黄UI - 一个好用的UI框架',
   themeConfig: {
     nav: [
-      { text: '主页', link: '/' },
-      { text: '文档', link: '/guide/'},
-      { text: '交流', link: 'https://github.com/xdh5/xdh-UI' },
+      { text: '主页', link: '/xdh-UI/' },
+      { text: '文档', link: '/guide/' },
+      { text: '交流', link: 'https://github.com/xdh5/xdh-UI' }
     ],
     sidebar: [
       {
-        title: '介绍',
+        title: '开发指南',
         children: [
           '/guide/'
-        ]
-      },
-      {
-        title: '入门',
-        children: [
-          '/guide/start/installation',
-          '/guide/start/quickstart'
         ]
       },
       {
@@ -35,8 +27,12 @@ module.exports = {
           '/guide/components/popover',
           '/guide/components/collapse',
         ]
-      },
-
+      }
     ]
+  },
+  configureWebpack: {
+    output: {
+      publicPath: './'
+    }
   }
 }
