@@ -154,14 +154,14 @@ title: Grid
 **Row Attributes**
 <table style="font-size:14px">
   <tr> <th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th> </tr>
-  <tr> <td>gutter</td> <td>栅格间隙</td> <td>Number</td> <td>-</td> <td>0</td> </tr>
-  <tr> <td>align</td> <td>栅格位置</td> <td>String</td> <td>left, center, right</td> <td>left</td> </tr>
+  <tr> <td>gutter</td> <td>栅格间隙</td> <td>number</td> <td>-</td> <td>0</td> </tr>
+  <tr> <td>align</td> <td>栅格位置</td> <td>string</td> <td>left / center / right</td> <td>left</td> </tr>
 </table>
 
 **Col Events**
 <table style="font-size:14px">
   <tr> <th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th> </tr>
-  <tr> <td>span</td> <td>24栅格占位</td> <td>Number</td> <td>-</td> <td>-</td> </tr>
-  <tr> <td>offset</td> <td>栅格位移</td> <td>Number</td> <td>-</td> <td>-</td> </tr>
-  <tr> <td>xs, sm, md, lg, xl</td> <td>栅格响应式</td> <td>Object</td> <td>-</td> <td>-</td> </tr>
+  <tr> <td>span</td> <td>24栅格占位</td> <td>number</td> <td>-</td> <td>-</td> </tr>
+  <tr> <td>offset</td> <td>栅格位移</td> <td>number</td> <td>-</td> <td>-</td> </tr>
+  <tr> <td>xs, sm, md, lg, xl</td> <td>栅格响应式</td> <td>object</td> <td>-</td> <td>-</td> </tr>
 </table>

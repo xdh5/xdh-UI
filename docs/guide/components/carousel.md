@@ -38,7 +38,7 @@ title: Carousel
 **Cascader Attributes**
 <table style="font-size:14px">
   <tr> <th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th> </tr>
-  <tr> <td>autoPlay</td> <td>自动播放</td> <td>boolean</td> <td>true, false</td> <td>true</td> </tr>
+  <tr> <td>autoPlay</td> <td>自动播放</td> <td>boolean</td> <td>-</td> <td>true</td> </tr>
   <tr> <td>autoPlayDelay</td> <td>自动播放间隔时间</td> <td>number</td> <td>-</td> <td>3000</td> </tr>
 </table>
 

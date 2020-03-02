@@ -1,7 +1,12 @@
 module.exports = {
-  base: '/xdh-UI/',
+  base: '/',
   title: 'xdhUI 中文文档 | xdhUI 中文网',
   description: '蛋黄UI - 一个好用的UI框架',
+  configureWebpack: {
+    output: {
+      publicPath:'./'
+    }
+  },
   themeConfig: {
     nav: [
       { text: '主页', link: '/xdh-UI/' },
@@ -29,7 +34,10 @@ module.exports = {
           '/guide/components/cascader',
           '/guide/components/carousel',
           '/guide/components/nav',
-          '/guide/components/pagination'
+          '/guide/components/pagination',
+          '/guide/components/table',
+          '/guide/components/upload',
+          '/guide/components/sticky'
         ]
       }
     ]

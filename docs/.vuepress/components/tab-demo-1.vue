@@ -9,7 +9,7 @@ import Tab from '../../../src/components/tab/tab'
 import TabPane from '../../../src/components/tab/tab-pane'
 
 export default {
-  name: 'toast-demo-1',
+  name: 'tab-demo-1',
   components:{
     'x-tab': Tab,
     'x-tab-pane': TabPane,

@@ -33,6 +33,6 @@ title: Popover
 **Popover Attributes**
 <table style="font-size:14px">
   <tr> <th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th> </tr>
-  <tr> <td>position</td> <td>选择popover位置</td> <td>String</td> <td>top，bottom，left，right</td> <td>top</td> </tr>
-  <tr> <td>trigger</td> <td>选择触发方式</td> <td>String</td> <td>click，hover</td> <td>click</td> </tr>
+  <tr> <td>position</td> <td>选择popover位置</td> <td>string</td> <td>top / bottom / left / right</td> <td>top</td> </tr>
+  <tr> <td>trigger</td> <td>选择触发方式</td> <td>string</td> <td>click / hover</td> <td>click</td> </tr>
 </table>

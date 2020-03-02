@@ -63,9 +63,9 @@ export default {
 
 <table style="font-size:14px">
   <tr> <th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th> </tr>
-  <tr> <td>msg</td> <td>提示文字</td> <td>String</td> <td>-</td> <td>-</td> </tr>
-  <tr> <td>autoClose</td> <td>自动关闭时间（0为不自动关闭）</td> <td>Number</td> <td>-</td> <td>3</td> </tr>
-  <tr> <td>closeButton</td> <td>自定义关闭按钮，text为按钮文字，callback为关闭后回调函数</td> <td>Object</td> <td>-</td> <td>text: '关闭', callback: undefined</td> </tr>
-  <tr> <td>enableHtml</td> <td>是否允许出现HTML片段</td> <td>Boolean</td> <td>true, false</td> <td>false</td> </tr>
-  <tr> <td>position</td> <td>提示消息出现位置</td> <td>String</td> <td>top, bottom, middle</td> <td>top</td> </tr>
+  <tr> <td>msg</td> <td>提示文字</td> <td>string</td> <td>-</td> <td>-</td> </tr>
+  <tr> <td>autoClose</td> <td>自动关闭时间（0为不自动关闭）</td> <td>number</td> <td>-</td> <td>3</td> </tr>
+  <tr> <td>closeButton</td> <td>自定义关闭按钮，text为按钮文字，callback为关闭后回调函数</td> <td>object</td> <td>-</td> <td>text: '关闭', callback: undefined</td> </tr>
+  <tr> <td>enableHtml</td> <td>是否允许出现HTML片段</td> <td>boolean</td> <td>-</td> <td>false</td> </tr>
+  <tr> <td>position</td> <td>提示消息出现位置</td> <td>string</td> <td>top / bottom / middle</td> <td>top</td> </tr>
 </table>
