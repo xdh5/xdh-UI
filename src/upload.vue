@@ -34,7 +34,7 @@ import plugin from './plugin'
 Vue.use(plugin)
 
 export default {
-  name: 'xUploader',
+  name: 'x-upload',
   components: { XIcon },
   props: {
     name: { type: String, required: true }, // 上传文件传给后端的key

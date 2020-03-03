@@ -1,6 +1,6 @@
 {
   "name": "xdh-ui",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "main": "lib/xdh-ui.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
