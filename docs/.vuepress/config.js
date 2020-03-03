@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/',
+  base: '/xdh-UI/',
   title: 'xdhUI 中文文档 | xdhUI 中文网',
   description: '蛋黄UI - 一个好用的UI框架',
   configureWebpack: {
