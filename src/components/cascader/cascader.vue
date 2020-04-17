@@ -12,8 +12,9 @@
 </template>
 
 <script>
+import ClickOutside from 'vue-click-outside'
 import CascaderItems from './cascader-items'
-import ClickOutside from '../click-outside'
+
 export default {
   name: 'x-cascader',
   components: { 'x-cascader-items': CascaderItems },
