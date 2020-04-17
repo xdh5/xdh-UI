@@ -1,5 +1,5 @@
 let onClickDocument = (e) => {
-  let { target } = e
+  let { target } = e // 找到被点击的对象
   callbacks.forEach((item) => {
     if (target === item.el || item.el.contains(target)) {
       return

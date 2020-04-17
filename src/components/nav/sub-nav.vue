@@ -16,8 +16,9 @@
 </template>
 
 <script>
-import ClickOutside from '../click-outside'
+import ClickOutside from 'vue-click-outside'
 import XIcon from '../icon'
+
 export default {
   components: { XIcon },
   directives: { ClickOutside },

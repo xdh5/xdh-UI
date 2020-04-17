@@ -13,7 +13,8 @@
 
 <script>
 import CascaderItems from './cascader-items'
-import ClickOutside from '../click-outside'
+import ClickOutside from 'vue-click-outside'
+
 export default {
   name: 'x-cascader',
   components: { 'x-cascader-items': CascaderItems },
